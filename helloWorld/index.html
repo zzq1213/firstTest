@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			position: relative;
+		}
+		p{
+			text-align: center;
+			font-size: 24px;
+			color: red;
+		}
+		.box{
+			height: 100px;
+			width: 100px;
+			background: red;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			animation:myfirst 4s infinite linear;
+		}
+		@keyframes myfirst{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<p>Hello World !</p>
+	<p>你好啊，世界！这是我的第一个网页！</p>
+	<div class="box"></div>
+</body>	
+<script>
+	
+</script>
+</html>
